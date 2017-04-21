@@ -38,6 +38,7 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
+            this.btnEncontrar = new System.Windows.Forms.Button();
             this.tbcBiblia.SuspendLayout();
             this.tbpEncontrar.SuspendLayout();
             this.SuspendLayout();
@@ -56,6 +57,7 @@
             // 
             // tbpEncontrar
             // 
+            this.tbpEncontrar.Controls.Add(this.btnEncontrar);
             this.tbpEncontrar.Controls.Add(this.textBox3);
             this.tbpEncontrar.Controls.Add(this.textBox2);
             this.tbpEncontrar.Controls.Add(this.textBox1);
@@ -142,6 +144,15 @@
             this.textBox3.Size = new System.Drawing.Size(97, 20);
             this.textBox3.TabIndex = 6;
             // 
+            // btnEncontrar
+            // 
+            this.btnEncontrar.Location = new System.Drawing.Point(83, 161);
+            this.btnEncontrar.Name = "btnEncontrar";
+            this.btnEncontrar.Size = new System.Drawing.Size(75, 23);
+            this.btnEncontrar.TabIndex = 7;
+            this.btnEncontrar.Text = "Encontre!";
+            this.btnEncontrar.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -169,6 +180,7 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnEncontrar;
     }
 }
 
