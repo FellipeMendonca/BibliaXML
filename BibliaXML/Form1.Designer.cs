@@ -1,6 +1,6 @@
 ﻿namespace BibliaXML
 {
-    partial class Form1
+    partial class frmPrincipal
     {
         /// <summary>
         /// Required designer variable.
@@ -146,21 +146,21 @@
             // 
             // btnEncontrar
             // 
-            this.btnEncontrar.Location = new System.Drawing.Point(83, 161);
+            this.btnEncontrar.Location = new System.Drawing.Point(85, 161);
             this.btnEncontrar.Name = "btnEncontrar";
             this.btnEncontrar.Size = new System.Drawing.Size(75, 23);
             this.btnEncontrar.TabIndex = 7;
             this.btnEncontrar.Text = "Encontre!";
             this.btnEncontrar.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
             this.Controls.Add(this.tbcBiblia);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "frmPrincipal";
+            this.Text = "Encontre seu Palavra";
             this.tbcBiblia.ResumeLayout(false);
             this.tbpEncontrar.ResumeLayout(false);
             this.tbpEncontrar.PerformLayout();
