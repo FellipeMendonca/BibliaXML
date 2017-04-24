@@ -1,7 +1,7 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <biblioteca>
   <titulo>Anotações sobre a Biblia</titulo>
   <anotacoes>
-    <anotacao id ="1" versiculo ="GÊNESIS-GÊNESIS [1]-1 No princípio criou Deus os céus e a terra." comentario = "Neste momento tudo começou"/>
+    <anotacao id="1" versiculo="LUCAS-LUCAS [10]-1 Depois disso designou o Senhor outros setenta, e os enviou adiante de si, de dois em dois, a todas as cidades e lugares aonde ele havia de ir." comentario="Ferrere" />
   </anotacoes>
 </biblioteca>

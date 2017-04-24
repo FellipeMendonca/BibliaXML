@@ -40,7 +40,8 @@
             this.lbTitulo = new System.Windows.Forms.Label();
             this.tbpComentarios = new System.Windows.Forms.TabPage();
             this.dgvAnotações = new System.Windows.Forms.DataGridView();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnExcluirAnotação = new System.Windows.Forms.Button();
+            this.btnEditar = new System.Windows.Forms.Button();
             this.tbcBiblia.SuspendLayout();
             this.tbpEncontrar.SuspendLayout();
             this.tbpComentarios.SuspendLayout();
@@ -62,7 +63,6 @@
             // 
             // tbpEncontrar
             // 
-            this.tbpEncontrar.Controls.Add(this.panel1);
             this.tbpEncontrar.Controls.Add(this.btnEncontrar);
             this.tbpEncontrar.Controls.Add(this.txbVersiculo);
             this.tbpEncontrar.Controls.Add(this.txbCapitulo);
@@ -152,32 +152,50 @@
             // 
             // tbpComentarios
             // 
+            this.tbpComentarios.Controls.Add(this.btnEditar);
+            this.tbpComentarios.Controls.Add(this.btnExcluirAnotação);
             this.tbpComentarios.Controls.Add(this.dgvAnotações);
             this.tbpComentarios.Location = new System.Drawing.Point(4, 22);
             this.tbpComentarios.Name = "tbpComentarios";
             this.tbpComentarios.Padding = new System.Windows.Forms.Padding(3);
             this.tbpComentarios.Size = new System.Drawing.Size(252, 211);
             this.tbpComentarios.TabIndex = 1;
-            this.tbpComentarios.Text = "Comentarios";
+            this.tbpComentarios.Text = "Notas";
             this.tbpComentarios.UseVisualStyleBackColor = true;
             // 
             // dgvAnotações
             // 
+            this.dgvAnotações.AllowUserToAddRows = false;
+            this.dgvAnotações.AllowUserToDeleteRows = false;
             this.dgvAnotações.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgvAnotações.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvAnotações.Location = new System.Drawing.Point(0, 0);
             this.dgvAnotações.Name = "dgvAnotações";
-            this.dgvAnotações.Size = new System.Drawing.Size(252, 211);
+            this.dgvAnotações.ReadOnly = true;
+            this.dgvAnotações.Size = new System.Drawing.Size(252, 176);
             this.dgvAnotações.TabIndex = 0;
             // 
-            // panel1
+            // btnExcluirAnotação
             // 
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(3, 139);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(246, 69);
-            this.panel1.TabIndex = 1;
-            this.panel1.Visible = false;
+            this.btnExcluirAnotação.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnExcluirAnotação.Location = new System.Drawing.Point(6, 182);
+            this.btnExcluirAnotação.Name = "btnExcluirAnotação";
+            this.btnExcluirAnotação.Size = new System.Drawing.Size(108, 23);
+            this.btnExcluirAnotação.TabIndex = 1;
+            this.btnExcluirAnotação.Text = "Excluir Nota";
+            this.btnExcluirAnotação.UseVisualStyleBackColor = true;
+            this.btnExcluirAnotação.Click += new System.EventHandler(this.btnExcluirAnotação_Click);
+            // 
+            // btnEditar
+            // 
+            this.btnEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnEditar.Location = new System.Drawing.Point(138, 182);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(108, 23);
+            this.btnEditar.TabIndex = 2;
+            this.btnEditar.Text = "Editar Nota";
+            this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // frmPrincipal
             // 
@@ -210,7 +228,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnEncontrar;
         private System.Windows.Forms.DataGridView dgvAnotações;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btnExcluirAnotação;
+        private System.Windows.Forms.Button btnEditar;
     }
 }
 
